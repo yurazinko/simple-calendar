@@ -1,4 +1,4 @@
-#date-block {
+#today-block {
 	display: block;
 	position: relative;
 	text-align: center;
@@ -8,5 +8,23 @@
 
 #today-date {
 	display: block;
-	font-size: 20em;
+	position: relative;
+	margin: 0 auto;
+	font-size: 7em;
+}
+
+#tomorrow-block, #yesterday-block {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.8em;
+	border: 1px solid green;
+}
+
+#tomorrow-date, #yesterday-date {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	font-size: 5em;
 }
