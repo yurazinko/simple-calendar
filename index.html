@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Simple Calendar</title>
+    <title>AngularJS Calendar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="script/script.js"></script>
 </head>
 
@@ -22,22 +22,22 @@
         <div class="container">
             <div class="row">
                 <div id="yesterday-block" class="col-sm-2">
-                    <p id="yesterday-weekday">Friday</p>
-                    <p id="yesterday-date">26</p>
-                    <p id="yesterday-month">August</p>
-                    <p id="yesterday-year">2016</p>
+                    <p id="yesterday-weekday">{{ }}</p>
+                    <p id="yesterday-date">{{ }}</p>
+                    <p id="yesterday-month">{{ }}</p>
+                    <p id="yesterday-year">{{ }}</p>
                 </div>
-                <div id="today-block" class="col-sm-8">
-                    <p id="today-weekday"></p>
-                    <p id="today-date"></p>
-                    <p id="today-month"></p>
-                    <p id="today-year"></p>
+                <div ng-app="calendarApp" ng-controller="calendarCtrl" id="today-block" class="col-sm-8">
+                    <p id="today-weekday">{{ }}</p>
+                    <p id="today-date">{{5 + 5}}</p>
+                    <p id="today-month">{{ }}</p>
+                    <p id="today-year">{{ }}</p>
                 </div>
                 <div id="tomorrow-block" class="col-sm-2">
-                    <p id="tomorrow-weekday">Sunday</p>
-                    <p id="tomorrow-date">28</p>
-                    <p id="tomorrow-month">August</p>
-                    <p id="tomorrow-year">2016</p>
+                    <p id="tomorrow-weekday">{{ }}</p>
+                    <p id="tomorrow-date">{{ }}</p>
+                    <p id="tomorrow-month">{{ }}</p>
+                    <p id="tomorrow-year">{{ }}</p>
                 </div>
             </div>
         </div>
