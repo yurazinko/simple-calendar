@@ -1,19 +1,3 @@
-$(function() {
-    var globalDate = new Date();
-    var calendar = angular.module('calendarApp', []);
-    calendar.controller('calendarCtrl', function($scope) {
-        $scope.todayDate = globalDate.getDate();
-        $scope.test = 'hello world';
-    })
-})
-
-
-
-
-
-
-
-
 
 /*
 $(function() {
